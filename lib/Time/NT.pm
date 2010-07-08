@@ -4,7 +4,7 @@ use 5.008008;
 use strict;
 use warnings;
 
-our $VERSION = '0.002';
+our $VERSION = '0.003';
 
 use parent qw{ Exporter };
 
@@ -33,11 +33,11 @@ __END__
 
 =head1 NAME
 
-DateTime::NT - Perl module for working with Windows NT sytem time format
+Time::NT - Perl module for working with Windows NT sytem time format
 
 =head1 SYNOPSIS
 
-  use DateTime::NT ':all';
+  use Time::NT ':all';
   my $nttime = unix_to_nt(time);
   my $unixtime = nt_to_unix($nttime);
   my $nt_now = nt_time();

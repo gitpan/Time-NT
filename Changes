@@ -1,3 +1,6 @@
+0.003  Thu Jul 	8 10:37:00 2010
+	- Fixing Documentation from name change
+
 0.002  Thu Jul  8 09:08:10 2010
 	- Renamed to Time::NT
  	- Added nt_time()

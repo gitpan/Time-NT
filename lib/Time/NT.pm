@@ -4,13 +4,15 @@ use 5.008008;
 use strict;
 use warnings;
 
-our $VERSION = '0.003';
+our $VERSION = '0.004';
 
-use parent qw{ Exporter };
-
-our %EXPORT_TAGS = ( 'all' => [ qw(nt_to_unix unix_to_nt nt_time) ] ); 
-our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
-our @EXPORT = ();
+our (@ISA, @EXPORT_OK, %EXPORT_TAGS);
+BEGIN {
+  require Exporter;
+  @ISA = qw(Exporter);
+  %EXPORT_TAGS = ( 'all' => [ qw(nt_to_unix unix_to_nt nt_time) ] ); 
+  @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
+}
 
 sub nt_to_unix {
     my $ntTime = shift;

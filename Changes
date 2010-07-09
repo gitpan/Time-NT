@@ -1,3 +1,8 @@
+0.004  Thu Jul	9 15:08:19 2010
+	- Removed the use of 'parent'
+	- Changed a test up to use the ':all' export tag.
+        - Added a test::more requirement in the makefile.
+
 0.003  Thu Jul 	8 10:37:00 2010
 	- Fixing Documentation from name change
 
